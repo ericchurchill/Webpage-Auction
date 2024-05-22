@@ -23,14 +23,14 @@ function PrimaryBids() {
   };
 
   const navigate = useNavigate();
-  
+
   const handleSecondaryBidsClick = () => {
     navigate('/secondarybids');
   };
 
   const logout = () => {
     alert('You have been logged out!');
-    window.location.href = '/login';
+    navigate('/login');
   };
   
   return (
@@ -58,7 +58,6 @@ function PrimaryBids() {
           <tr>
             <td colSpan="2" align="center">
               <button type="button" onClick={insertBid}>Submit</button>
-              <button type="button" onClick={logout}>Logout</button>
             </td>
           </tr>
         </table>
@@ -72,6 +71,7 @@ function PrimaryBids() {
         <button onClick={handleSecondaryBidsClick}>Go to Secondary Bids</button>  
       </div>
     </div>
+    <button type="button" onClick={logout}>Logout</button>
     </div>
   );
 }
