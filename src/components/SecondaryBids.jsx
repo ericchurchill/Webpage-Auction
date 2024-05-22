@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SecondaryBids() {
   const [SlotNumber, setSlotNumber] = useState('');
@@ -18,9 +19,8 @@ function SecondaryBids() {
     alert("success");
   };
 
-  const logout = () => {
-    alert('You have been logged out!');
-    window.location.href = '/login';
+  const handlePBClick = () => {
+    navigate('/PrimaryBids');
   };
 
   return (
@@ -52,11 +52,11 @@ function SecondaryBids() {
           <tr>
             <td colSpan="2" align="center">
               <button type="button" onClick={insertSecondaryBid}>Submit</button>
-              <button type="button" onClick={logout}>Logout</button>
-            </td>
+              </td>
           </tr>
         </table>
       </form>
+      <button onClick={handlePBClick}>Homepage</button>
     </div>
   );
 }
