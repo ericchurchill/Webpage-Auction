@@ -65,10 +65,10 @@ function PrimaryBids() {
       <div>
       <h3>Navigation</h3>
       <div>
-        <button onClick={handleSecondaryBidsClick}>Go to Secondary Bids</button>
+        <button onClick={handleMCPClick}>Go to MCP</button>
       </div>
       <div>
-        <button onClick={handleMCPClick}>Go to MCP</button>
+        <button onClick={handleSecondaryBidsClick}>Go to Secondary Bids</button>  
       </div>
     </div>
     </div>
