@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Admin() {
   const loadPrimaryBids = () => {
@@ -84,7 +85,7 @@ function Admin() {
 
   const logout = () => {
     alert('You have been logged out!');
-    window.location.href = '/login';
+    navigate('/login');
   };
 
   return (
