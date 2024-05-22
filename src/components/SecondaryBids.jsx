@@ -16,11 +16,11 @@ function SecondaryBids() {
     });
     const data = await response.json();
     console.log (data);
-    alert("success");
+    alert("Entry updated..");
   };
 
   const navigate = useNavigate();
-  
+
   const handlePBClick = () => {
     navigate('/PrimaryBids');
   };

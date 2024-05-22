@@ -27,7 +27,7 @@ function Admin() {
         document.getElementById('auctionTable').innerHTML = trHTML;
       });
   };
-  
+
   const navigate = useNavigate();
 
   const loadMCP = () => {
@@ -86,7 +86,7 @@ function Admin() {
   };
 
   const logout = () => {
-    alert('You have been logged out!');
+    alert('You have been logged out!!');
     navigate('/login');
   };
 

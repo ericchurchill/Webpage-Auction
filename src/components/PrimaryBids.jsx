@@ -15,7 +15,7 @@ function PrimaryBids() {
     });
     const data = await response.json();
     console.log (data);
-    alert("success");
+    alert("Entry updated..");
   };
 
   const handleMCPClick = () => {
@@ -29,7 +29,7 @@ function PrimaryBids() {
   };
 
   const logout = () => {
-    alert('You have been logged out!');
+    alert('You have been logged out!!');
     navigate('/login');
   };
   
