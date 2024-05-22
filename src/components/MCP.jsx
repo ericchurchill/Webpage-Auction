@@ -43,6 +43,10 @@ function MCP() {
       .catch(error => console.error('Error fetching MCP data:', error));
   };
 
+  const handlePBClick = () => {
+    navigate('/PrimaryBids');
+  };
+
   return (
     <div>
       <h2>MCP and Bus power</h2>
@@ -63,7 +67,7 @@ function MCP() {
       <h3 id="mcpResult">{mcp}</h3>
       <h3 id="busPowerResult">{busPower}</h3>
 
-      <a href="index.html" className="submitBtn">Homepage</a>
+      <button onClick={handlePBClick}>Homepage</button>
     </div>
   );
 }
