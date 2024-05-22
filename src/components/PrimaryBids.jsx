@@ -23,6 +23,7 @@ function PrimaryBids() {
   };
 
   const navigate = useNavigate();
+  
   const handleSecondaryBidsClick = () => {
     navigate('/secondarybids');
   };

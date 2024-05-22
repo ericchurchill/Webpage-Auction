@@ -43,6 +43,8 @@ function MCP() {
       })
       .catch(error => console.error('Error fetching MCP data:', error));
   };
+  
+  const navigate = useNavigate();
 
   const handlePBClick = () => {
     navigate('/PrimaryBids');

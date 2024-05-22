@@ -27,6 +27,8 @@ function Admin() {
         document.getElementById('auctionTable').innerHTML = trHTML;
       });
   };
+  
+  const navigate = useNavigate();
 
   const loadMCP = () => {
     fetch('https://auction-web-10k5.onrender.com/MCP')

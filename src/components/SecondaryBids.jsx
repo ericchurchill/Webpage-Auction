@@ -19,6 +19,8 @@ function SecondaryBids() {
     alert("success");
   };
 
+  const navigate = useNavigate();
+  
   const handlePBClick = () => {
     navigate('/PrimaryBids');
   };
