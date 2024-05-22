@@ -18,20 +18,20 @@ function PrimaryBids() {
     alert("success");
   };
 
-  const logout = () => {
-    alert('You have been logged out!');
-    window.location.href = '/login';
+  const handleMCPClick = () => {
+    navigate('/mcp');
   };
-  
+
   const navigate = useNavigate();
   const handleSecondaryBidsClick = () => {
     navigate('/secondarybids');
   };
 
-  const handleMCPClick = () => {
-    navigate('/mcp');
+  const logout = () => {
+    alert('You have been logged out!');
+    window.location.href = '/login';
   };
-
+  
   return (
     <div align="center">
       <br /><br /><br />
