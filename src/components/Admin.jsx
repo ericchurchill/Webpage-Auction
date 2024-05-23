@@ -38,7 +38,7 @@ function Admin() {
         trHTML += "<div class='table-responsive'>";
         trHTML += "<table class='table'>";
         trHTML += "<thead>";
-        trHTML += "<tr> <th scope='col'>SLOT NUMBER</th>  <th scope='col'>MCP</th> <th scope='col'>BUS 1</th> <th scope='col'>BUS 2</th>  <th scope='col'>BUS 3</th> <th scope='col'>BUS 4</th>  <th scope='col'>BUS 5</th> </tr></thead>";
+        trHTML += "<tr> <th scope='col'>SLOT NUMBER</th> <th scope='col'>MCP</th> <th scope='col'>BUS 1</th> <th scope='col'>BUS 2</th> <th scope='col'>BUS 3</th> <th scope='col'>BUS 4</th> <th scope='col'>BUS 5</th> </tr></thead>";
         trHTML += "<tbody>";
 
         data.forEach(object => {
@@ -66,7 +66,7 @@ function Admin() {
         trHTML += "<div class='table-responsive'>";
         trHTML += "<table class='table'>";
         trHTML += "<thead>";
-        trHTML += "<tr> <th scope='col'>ID</th> <th scope='col'>SLOT NUMBER</th>  <th scope='col'>BUS NUMBER</th>  <th scope='col'>INC. POWER</th>   <th scope='col'>DEC. POWER</th> <th scope='col'>VARYING PRICE</th>   </tr>  </thead> ";
+        trHTML += "<tr> <th scope='col'>ID</th> <th scope='col'>SLOT NUMBER</th> <th scope='col'>BUS NUMBER</th> <th scope='col'>INC. POWER</th> <th scope='col'>DEC. POWER</th> <th scope='col'>VARYING PRICE</th> </tr></thead> ";
         trHTML += "<tbody>";
 
         data.forEach(object => {

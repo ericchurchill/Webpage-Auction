@@ -28,6 +28,10 @@ function PrimaryBids() {
     navigate('/secondarybids');
   };
 
+  const handleRelay = () => {
+    navigate('/192.168.13.165');
+  };
+
   const logout = () => {
     alert('You have been logged out!!');
     navigate('/login');
@@ -69,6 +73,9 @@ function PrimaryBids() {
       </div>
       <div>
         <button onClick={handleSecondaryBidsClick}>Go to Secondary Bids</button>  
+      </div>
+      <div>
+        <button onClick={handleRelay}>Power Control</button>  
       </div>
     </div>
     <button type="button" onClick={logout}>Logout</button>
