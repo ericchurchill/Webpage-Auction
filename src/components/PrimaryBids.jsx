@@ -29,7 +29,7 @@ function PrimaryBids() {
   };
 
   const handleRelay = () => {
-    navigate('/192.168.13.165');
+    window.location.href = 'http://192.168.13.165/';
   };
 
   const logout = () => {
